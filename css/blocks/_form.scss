@@ -1,0 +1,43 @@
+.btn {
+  border: 1px solid transparent;
+  font-family: var(--userfont2);
+  padding: 15px 30px;
+  text-transform: lowercase;
+  transition: all .2s ease;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0;
+  font-size: var(--regular-text);
+  font-weight: 400;
+  line-height: var(--lineheight);
+  color: var(--white);
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 2px solid var(--white);
+  appearance: none;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-recall {
+  --gap: 30px;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  .form-control {
+    width: calc( 50% - ( var(--gap) / 2 ) );
+  }
+  .form-recall__btn {
+    width: 100%;
+    border-color: var(--yellow);
+    &:hover {
+      color: var(--black);
+      background-color: var(--yellow);
+    }
+  }
+}

@@ -1,0 +1,255 @@
+.header--home {
+  background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
+  background-size: 800% 800%;
+  animation: header-bg 20s ease infinite;
+  min-height: 680px;
+  padding-bottom: 65px;
+
+  .header-top {
+    
+    .logo {
+      &__light { display: block; }
+      &__dark { display: none; }
+    }
+    .phone {
+      &__num {
+        color: var(--white);
+        svg {
+          path {
+            fill: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    &__link {
+      color: var(--white);
+    }
+  }
+
+  .lang {
+    &__bt {
+      color: var(--white);
+      svg path { fill: var(--white); }
+    }
+  }
+
+}
+@keyframes header-bg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.header-top {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    flex-shrink: 0;
+    &__light {
+      display: none;
+    }
+    img {
+      width: auto;
+      height: 36px;
+    }
+  }
+
+  .phone {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+    &__num {
+      // position: relative;
+      // z-index: 1;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 6px;
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        path {
+          fill: var(--orchid);
+        }
+      }
+      &:hover {
+        color: var(--yellow) !important;
+      }
+      &.active {
+        color: var(--white);
+      }
+    }
+    &__modal {
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      left: -20px;
+      background-color: var(--black);
+      min-width: 440px;
+      padding: 50px 20px 20px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .2s ease;
+      color: var(--white);
+
+      &-num {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 6px;
+          width: 16px;
+          height: 16px;
+          flex-shrink: 0;
+          path {
+            fill: var(--orchid);
+          }
+        }
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+
+      &-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        opacity: .6;
+        transition: all .2s ease;
+        &:before,
+        &:after {
+          position: absolute;
+          left: 11px;
+          content: ' ';
+          height: 25px;
+          width: 2px;
+          background-color: #ffffff;
+        }
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      p { margin-bottom: 25px; }
+
+      &.active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+
+    }
+  }
+
+}
+
+// Menu Nav
+.menu {
+  margin-left: 25px;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__link {
+    display: block;
+    color: var(--black);
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+}
+
+// language
+.lang {
+  margin-left: 25px;
+  position: relative;
+  font-family: var(--userfont2);
+  &__bt {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    svg {
+      margin-left: 6px;
+      transition: all .2s ease;
+      path {
+        fill: var(--orchid);
+      }
+    }
+    &:hover {
+      color: var(--yellow) !important;
+    }
+    &.active {
+      background-color: var(--black);
+      color: var(--white);
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+    a {
+      padding: 0 10px 5px;
+      color: var(--white);
+      &:hover {
+        color: var(--yellow);
+      }
+    }
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+
+// header-content
+.header-content {
+  color: var(--white);
+
+  .title-wrapp {
+    margin-bottom: 50px;
+  }
+  .title {
+    font-family: var(--userfont2);
+    font-size: 48px;
+    line-height: 1.196;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
