@@ -37,7 +37,9 @@ $(".title-slider").slick({
   speed: 300,
   arrows: false,
   autoplay: true,
+  autoplaySpeed: 1000,
   infinite: true,
   fade: true,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  pauseOnHover:false
 });
