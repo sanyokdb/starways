@@ -14,14 +14,14 @@
     opacity: .35;
   }
 
-  &__grid {
+  &__row {
     display: flex;
     align-items: stretch;
     column-gap: 20px;
   }
   
   &__item {
-    width: calc(33.3333% - 20px);
+    width: calc(33.33333333% - 20px);
     padding-top: 260px;
     padding-bottom: 60px;
     min-height: 256px;

@@ -32,7 +32,7 @@ $(function(){
 });
 
 
-$(".title-slider").slick({
+$(".header-title-slider").slick({
   slidesToShow: 1,
   speed: 300,
   arrows: false,

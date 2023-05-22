@@ -239,17 +239,15 @@
 // header-content
 .header-content {
   color: var(--white);
-
-  .title-wrapp {
-    margin-bottom: 50px;
-  }
-  .title {
-    font-family: var(--userfont2);
-    font-size: 48px;
-    line-height: 1.196;
-  }
-
-  p {
-    margin-bottom: 30px;
-  }
+}
+.header-title-wrapp {
+  margin-bottom: 50px;
+}
+.header-title {
+  font-family: var(--userfont2);
+  font-size: 48px;
+  line-height: 1.196;
+}
+.header-text {
+  margin-bottom: 30px;
 }
