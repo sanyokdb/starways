@@ -4,9 +4,6 @@ $(document).on("click", ".js-lang__btn", function() {
   $(this).toggleClass('active');
   $('.js-lang__dropdown').toggleClass('active');
 });
-// $("body").click(function(){
-//   $(".js-lang__btn, .js-lang__dropdown").removeClass("active");
-// });
 
 $(document).on("click", ".js-phone__num, .js-phone__modal-close", function() {
   // $(this).toggleClass('active');

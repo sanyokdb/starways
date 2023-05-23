@@ -64,6 +64,9 @@ a {
   font-size: calc(1.3rem + .6vw);
 }
 
+p {
+  margin-bottom: 20px;
+}
 .title {
   font-size: 35px;
   font-family: var(--userfont2);
@@ -80,6 +83,7 @@ a {
 @import "blocks/work";
 @import "blocks/cta";
 @import "blocks/client";
+@import "blocks/about";
 
 
 

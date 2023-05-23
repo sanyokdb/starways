@@ -7,10 +7,11 @@
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: var(--gap);
   }
   &__item {
-    flex-grow: 1;
+    // flex-grow: 1;
     text-align: center;
     width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
     img {

@@ -1,0 +1,23 @@
+.about-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__row {
+    --gap: 30px;
+    display: flex;
+    // justify-content: space-between;
+    gap: var(--gap);
+  }
+  &__text {
+    width: calc(50% - var(--gap) / 2 );
+  }
+  &__image {
+    width: calc(50% - var(--gap) / 2 );
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 400px;
+    }
+  }
+}
