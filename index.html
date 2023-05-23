@@ -39,11 +39,13 @@
             <span class="phone__modal-close js-phone__modal-close"></span>
             <a class="phone__modal-num" href="tel:+998910170909"><svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6583 22.9999C18.9111 22.9999 16.2329 22.393 13.6237 21.1791C11.0144 19.9652 8.7038 18.3467 6.69172 16.3235C4.67965 14.3004 3.06113 11.9842 1.83617 9.37502C0.611204 6.76581 -0.000850964 4.08802 8.87963e-07 1.34166V0.670831C8.87963e-07 0.436573 0.0212971 0.212962 0.0638897 0H7.53889L8.72083 6.42081L5.07917 10.0944C5.97361 11.6277 7.0972 13.0652 8.44994 14.4069C9.80269 15.7485 11.2879 16.9092 12.9056 17.8888L16.6111 14.1833L23 15.4611V22.936C22.787 22.9573 22.5634 22.9735 22.3292 22.9846C22.0949 22.9957 21.8713 23.0008 21.6583 22.9999Z" fill="currentColor"/></svg>+99891 017 0909</a>
             <p>Закажите обратный звонок для бесплатной консультации</p>
-            <div class="form-recall">
-              <input type="text" class="form-control" placeholder="Ваше Имя">
-              <input id="phone" type="text" class="form-control" placeholder="+998">
-              <button class="btn form-recall__btn">Отправить заявку</button>
-            </div>
+            <form action="#">
+              <div class="form-recall">
+                <input type="text" class="form-control" placeholder="Ваше Имя">
+                <input type="text" class="form-control" placeholder="Ваш телефон">
+                <button class="btn form-recall__btn">Отправить заявку</button>
+              </div>
+            </form>
           </div>
         </div>
         <nav class="menu">
@@ -54,7 +56,7 @@
           </ul>
         </nav>
         <div class="lang">
-          <a class="lang__bt js-lang__bt" href="#">RU <svg width="9" height="9" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.18382e-07 3.09512L6.83091e-07 6.19023L5.78363e-07 8.58612L5.47799e-07 9.28535L6 12L12 9.28535L12 8.83548L12 6.19023L12 3.09512L12 1.54756L12 0L6 2.76864L9.53674e-07 -5.24537e-07L9.30414e-07 0.532133L8.18382e-07 3.09512Z" fill="currentColor"/></svg></a>
+          <a class="lang__btn js-lang__btn" href="#">RU <svg width="9" height="9" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.18382e-07 3.09512L6.83091e-07 6.19023L5.78363e-07 8.58612L5.47799e-07 9.28535L6 12L12 9.28535L12 8.83548L12 6.19023L12 3.09512L12 1.54756L12 0L6 2.76864L9.53674e-07 -5.24537e-07L9.30414e-07 0.532133L8.18382e-07 3.09512Z" fill="currentColor"/></svg></a>
           <div class="lang__dropdown js-lang__dropdown">
             <a href="#">EN</a>
             <a href="#">UZ</a>
@@ -77,49 +79,51 @@
           <div class="header-title">в Узбекистан</div>
         </div>
         <p class="header-text">Закажите обратный звонок для бесплатной консультации</p>
-        <div class="form-recall">
-          <input type="text" class="form-control" placeholder="Ваше Имя">
-          <input id="phone2" type="text" class="form-control" placeholder="+998">
-          <button class="btn form-recall__btn">Отправить заявку</button>
-        </div>
+        <form action="#">
+          <div class="header-form form-recall">
+            <input type="text" class="form-control" placeholder="Ваше Имя">
+            <input type="text" class="form-control" placeholder="Ваш телефон">
+            <button class="btn form-recall__btn">Отправить заявку</button>
+          </div>
+        </form>
       </div><!-- #header-content -->
 
     </div>
   </header><!-- #header -->
 
-  <div class="advantage">
+  <div class="advantage-section">
     <video src="images/video/advantage-video.mp4" autoplay loop muted></video>
     <div class="container">
-      <div class="advantage__row">
-        <div class="advantage__item">
-          <div class="advantage__item-body">
-            <div class="advantage__item-num">24/7</div>
-            <h3 class="advantage__item-title">Ваш личный менеджер на связи</h3>
-            <p class="advantage__item-text">Вы всегда можете получить ответы на любые вопросы от наших специалистов</p>
+      <div class="advantage-row">
+        <div class="advantage-item">
+          <div class="advantage-item__body">
+            <div class="advantage-item__num">24/7</div>
+            <h3 class="advantage-item__title">Ваш личный менеджер на связи</h3>
+            <p class="advantage-item__text">Вы всегда можете получить ответы на любые вопросы от наших специалистов</p>
           </div>
         </div>
-        <div class="advantage__item">
-          <div class="advantage__item-body">
-            <div class="advantage__item-num">11</div>
-            <h3 class="advantage__item-title">лет опыта в грузоперевозках</h3>
-            <p class="advantage__item-text">Мы знаем как максимально быстро и без проблем привезти Ваш груз. Мы можем оплатить за Ваш груз и довезти его до пункта назначения.</p>
+        <div class="advantage-item">
+          <div class="advantage-item__body">
+            <div class="advantage-item__num">11</div>
+            <h3 class="advantage-item__title">лет опыта в грузоперевозках</h3>
+            <p class="advantage-item__text">Мы знаем как максимально быстро и без проблем привезти Ваш груз. Мы можем оплатить за Ваш груз и довезти его до пункта назначения.</p>
           </div>
         </div>
-        <div class="advantage__item">
-          <div class="advantage__item-body">
-            <div class="advantage__item-num">2</div>
-            <h3 class="advantage__item-title">офиса в Узбекистане и в Европе</h3>
-            <p class="advantage__item-text">Мы работаем без посредников и оказываем дополнительно услуги. У нас один из лучших  складов в Европе для временного хранения вашего груза)</p>
+        <div class="advantage-item">
+          <div class="advantage-item__body">
+            <div class="advantage-item__num">2</div>
+            <h3 class="advantage-item__title">офиса в Узбекистане и в Европе</h3>
+            <p class="advantage-item__text">Мы работаем без посредников и оказываем дополнительно услуги. У нас один из лучших  складов в Европе для временного хранения вашего груза)</p>
           </div>
         </div>
       </div>
     </div>
   </div><!-- #advantage -->
-  
-  <div class="services">
+    
+  <div class="services-section">
     <div class="container">
       <h3 class="title">Наши услуги</h3>
-      <div class="services__row">
+      <div class="services-row">
         <div class="services-item">
           <h4 class="services-item__title">Доставка всех видов грузов:</h4>
           <ul class="services-item__list">
@@ -131,23 +135,86 @@
         </div>
         <div class="services-item">
           <h4 class="services-item__title">Бесплатные, профессиональные консультации по всему комплексу вопросов, связанных с перевозкой грузов</h4>
-          <div class="services-item__icon"><svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.9565 26.1146H40.2394H45.9344H47.5747L54.0047 13.0377L47.5747 0H46.5249H40.2394H32.9565H29.2691H25.6211L32.1691 13.0377L25.6211 26.1146H26.8546H32.9565Z" fill="currentColor"/><path d="M21.2371 39.1517H13.9411H8.25913H6.61884L0.175781 26.114L6.61884 13.0371H7.65551H13.9411H21.2371H24.9245H28.5594L22.0113 26.114L28.5594 39.1517H27.339H21.2371Z" fill="currentColor"/></svg></div>
+          <div class="services-item__icon"><svg width="66" height="40" viewBox="0 0 66 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.6346 13.2931H65.3652V40H39.0478V31.0754H51.817L51.7773 31.0352H57.2046L55.9633 28.4891L48.6346 13.2931ZM51.883 27.9263L50.6417 25.3802L38.4007 0H27.467H26.1201H18.3688H9.23102H4.70172H0.132812L7.35592 14.6198H27.1237L28.9988 18.4121H14.645L19.3196 27.9129H46.4558H51.883V27.9263Z" fill="currentColor"/></svg></div>
         </div>
         <div class="services-item">
           <h4 class="services-item__title">Перевозка сборных цельных и негабаритных грузов</h4>
-          <div class="services-item__icon"><svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.9565 26.1146H40.2394H45.9344H47.5747L54.0047 13.0377L47.5747 0H46.5249H40.2394H32.9565H29.2691H25.6211L32.1691 13.0377L25.6211 26.1146H26.8546H32.9565Z" fill="currentColor"/><path d="M21.2371 39.1517H13.9411H8.25913H6.61884L0.175781 26.114L6.61884 13.0371H7.65551H13.9411H21.2371H24.9245H28.5594L22.0113 26.114L28.5594 39.1517H27.339H21.2371Z" fill="currentColor"/></svg></div>
+          <div class="services-item__icon"><svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.32242H22.9858L16.8762 13.3519L13.309 16.9107L12.0248 18.178V19.8806V19.9574V19.9958V31.6067H25.6321L36.1132 21.2248V43H0V7.32242ZM27.3573 7.32242L30.4057 4.31409L34.7771 0L44 9.10182L39.6285 13.4159L36.1002 16.8979L24.3349 28.5472H23.7512H19.704H19.0814H16.4351H15.112V27.203V23.7979V21.1096V19.983V19.9446V19.4326L19.0814 15.5153L27.3573 7.32242Z" fill="currentColor"/></svg></div>
         </div>
         <div class="services-item">
           <h4 class="services-item__title">Оказываем помощь в оформлении сопроводительных документах</h4>
-          <div class="services-item__icon"><svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.9565 26.1146H40.2394H45.9344H47.5747L54.0047 13.0377L47.5747 0H46.5249H40.2394H32.9565H29.2691H25.6211L32.1691 13.0377L25.6211 26.1146H26.8546H32.9565Z" fill="currentColor"/><path d="M21.2371 39.1517H13.9411H8.25913H6.61884L0.175781 26.114L6.61884 13.0371H7.65551H13.9411H21.2371H24.9245H28.5594L22.0113 26.114L28.5594 39.1517H27.339H21.2371Z" fill="currentColor"/></svg></div>
+          <div class="services-item__icon"><svg width="36" height="45" viewBox="0 0 36 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 4.51668L18.0196 0L0 4.51668V32.8871L18.0196 45L36 32.8871V10.8811L16.6073 29.7562L6.93061 20.2609L10.1605 17.0659L16.6073 23.4303L36 4.55518V4.51668Z" fill="currentColor"/></svg></div>
         </div>
         <div class="services-item">
           <h4 class="services-item__title">Бесплатная консультация для начинающих импортеров/экспортеров</h4>
-          <div class="services-item__icon"><svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.9565 26.1146H40.2394H45.9344H47.5747L54.0047 13.0377L47.5747 0H46.5249H40.2394H32.9565H29.2691H25.6211L32.1691 13.0377L25.6211 26.1146H26.8546H32.9565Z" fill="currentColor"/><path d="M21.2371 39.1517H13.9411H8.25913H6.61884L0.175781 26.114L6.61884 13.0371H7.65551H13.9411H21.2371H24.9245H28.5594L22.0113 26.114L28.5594 39.1517H27.339H21.2371Z" fill="currentColor"/></svg></div>
+          <div class="services-item__icon"><svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.1069H13.0117V26.3211H20.5952L22.7106 35.2466L33.2742 26.3211H36.0282V39.428H18.0407L17.3622 40.0043L15.0206 41.9475L12.0405 44.4939L9.55255 46.5845L9.06027 47L7.25088 39.4414H0.0133174V13.1069H0ZM49 0H16.3378V22.9438H23.2028L24.7062 29.2158L32.0635 22.9438H49V0Z" fill="currentColor"/></svg></div>
         </div>
       </div>
     </div>
   </div><!-- #services -->
+
+  <div class="work-section">
+    <div class="container">
+      <h3 class="title">Как мы работаем</h3>
+      <div class="work-section__line"></div>
+      <div class="work-section__list">
+        <div class="work-section__item">
+          <p>Получение заявки</p>
+        </div>
+        <div class="work-section__item">
+          <p>Расчет ставки и подбор оптимального маршрута</p>
+        </div>
+        <div class="work-section__item">
+          <p>Забор груза и согласование отгрузочных документов</p>
+        </div>
+        <div class="work-section__item">
+          <p>Ежедневное информирование о местонахождения груза</p>
+        </div>
+        <div class="work-section__item">
+          <p>Доставка груза в пункт назначение</p>
+        </div>
+      </div>
+    </div>
+  </div><!-- #work-section -->
+
+  <div class="cta-section">
+    <div class="container">
+      <div class="cta-section__row">
+        <div class="cta-section__title">Закажите обратный звонок для бесплатной консультации</div>
+        <div class="cta-section__form">
+          <form action="#">
+            <div class="form-recall">
+              <input type="text" class="form-control" placeholder="Ваше Имя">
+              <input type="text" class="form-control" placeholder="Ваш телефон">
+              <button class="btn form-recall__btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><!-- #cta-section -->
+
+  <div class="client-section">
+    <div class="container">
+      <h3 class="title">Наши клиенты</h3>
+      <div class="client-section__row">
+        <div class="client-section__item"><img src="images/clients/001.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/002.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/003.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/004.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/005.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/006.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/007.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/008.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/009.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/010.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/011.png" alt="name"></div>
+        <div class="client-section__item"><img src="images/clients/012.png" alt="name"></div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="libs/jquery/jquery-3.7.0.min.js" defer></script>
   <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js" defer></script>

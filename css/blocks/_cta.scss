@@ -1,0 +1,46 @@
+.cta-section {
+  position: relative;
+  background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
+  background-size: 800% 800%;
+  animation: cta-bg 20s ease infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+    width: 263.94px;
+    height: 280px;
+    background-image: url('../../images/cta-section__title-bg.svg');
+
+
+  }
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-height: 280px;
+    padding: 50px 0;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--white);
+    width: 48%;
+    padding-right: 80px;
+
+  }
+  &__form {
+    width: 48%;
+  }
+}
+
+
+@keyframes cta-bg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

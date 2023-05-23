@@ -25,7 +25,7 @@
 
 .form-recall {
   --gap: 30px;
-  max-width: 400px;
+  // max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
@@ -35,6 +35,7 @@
   .form-recall__btn {
     width: 100%;
     border-color: var(--yellow);
+    color: var(--white);
     &:hover {
       color: var(--black);
       background-color: var(--yellow);

@@ -1,4 +1,4 @@
-.advantage {
+.advantage-section {
   position: relative;
   background-color: var(--black);
   color: var(--white);
@@ -13,57 +13,57 @@
     object-fit: cover;
     opacity: .35;
   }
+}
 
-  &__row {
-    display: flex;
-    align-items: stretch;
-    column-gap: 20px;
+.advantage-row {
+  display: flex;
+  align-items: stretch;
+  column-gap: 20px;
+}
+
+.advantage-item {
+  width: calc(33.33333333% - 20px);
+  padding-top: 260px;
+  padding-bottom: 60px;
+  min-height: 256px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: no-repeat center right / cover url("../images/advantage-arrow.svg");
+    opacity: 0;
+    transition: all .2s ease;
+    mask-image: linear-gradient(to right, transparent 10%, black 90%);
   }
   
-  &__item {
-    width: calc(33.33333333% - 20px);
-    padding-top: 260px;
-    padding-bottom: 60px;
-    min-height: 256px;
-    position: relative;
+  &:hover {
     &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background: no-repeat center right / cover url("../images/advantage-arrow.svg");
-      opacity: 0;
-      transition: all .2s ease;
-      mask-image: linear-gradient(to right, transparent 10%, black 90%);
-    }
-    &:hover {
-      &::after {
-        opacity: 1;
-      }
+      opacity: 1;
     }
   }
-  
-  &__item-body {
+
+  &__body {
     position: relative;
     z-index: 2;
     padding-right: 60px;
   }
-  
-  &__item-num {
+
+  &__num {
     font-size: 50px;
     font-family: var(--userfont2);
     color: var(--orchid);
   }
-  
-  &__item-title {
+
+  &__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 38px;
   }
-  
-  // &__item-text {}
 
+  // &__text { }
 }

@@ -1,4 +1,4 @@
-.services {
+.services-section {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--black);
@@ -6,21 +6,23 @@
   .title {
     color: var(--white);
   }
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    >div {
-      flex: 0 0 auto;
-      width: calc(33.33333333% - 19.99px);
+}
 
-    }
-    >div:nth-child(1) {
-      width: calc(50% - 15px);
-    }
-    >div:nth-child(2) {
-      width: calc(50% - 15px);
-    }
+.services-row {
+  --gap: 30px;
+  --elements: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  >div {
+    width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
+  }
+  >div:nth-child(1) {
+    width: calc(50% - var(--gap) / 2);
+  }
+  >div:nth-child(2) {
+    width: calc(50% - var(--gap) / 2 );
   }
 }
 
