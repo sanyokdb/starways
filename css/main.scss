@@ -9,6 +9,7 @@
   --yellow: #fafa59;
   --white: #ffffff;
   --black: #000000;
+  --gray: #E4E4E4;
   
   --accent: var(--purple);
   --text: var(--black);
@@ -102,3 +103,4 @@ p {
 @import "blocks/about";
 @import "blocks/experience";
 @import "blocks/faq";
+@import "blocks/cargo";

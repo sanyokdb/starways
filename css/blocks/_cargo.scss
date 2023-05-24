@@ -1,0 +1,54 @@
+.cargo-section {
+  background-color: var(--gray);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__row {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__form {
+    width: calc(55% - 30px);
+  }
+  &__result {
+    width: calc(45% - 30px);
+    // display: none;
+  }
+
+
+}
+
+
+.cargo-form {
+  display: flex;
+  gap: 20px;
+
+  &__number {
+    display: flex;
+    gap: 8px;
+  }
+  &__input {
+    background-color: var(--white);
+    max-width: 32px;
+    height: 52px;
+    text-align: center;
+  }
+  .btn {
+    flex-grow: 1;
+  }
+}
+
+.cargo-result {
+  li {
+    font-weight: 700;
+    span {
+      width: 70px;
+      display: inline-block;
+      font-weight: 400;
+    }
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

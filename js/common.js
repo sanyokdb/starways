@@ -34,3 +34,21 @@ $('.accordion__item').click(function () {
   }
   return false;
 });
+
+// $('.cargo-form__input').keyup(function(){
+//   if($(this).val().match(/^\d{1}$/))
+//     $(this).next('.cargo-form__input').focus();
+//   else
+//     $(this).val('');
+//   // Находим следующий элемент input
+//   var nextInput = $(this).nextAll('.cargo-form__input').first();
+//   // Если следующий элемент input существует, то устанавливаем на него фокус
+//   if (nextInput.length)
+//     nextInput.focus();
+// });
+
+$(".cargo-form__input").keyup(function() {
+  if (this.value.length == this.maxLength) {
+    $(this).nextAll('.cargo-form__input:enabled:first').focus();
+  }
+});

@@ -4,6 +4,22 @@
   padding: 15px 30px;
   text-transform: lowercase;
   transition: all .2s ease;
+  &-custom1 {
+    border-color: var(--yellow);
+    color: var(--white);
+    &:hover {
+      color: var(--black);
+      background-color: var(--yellow);
+    }
+  }
+  &-custom2 {
+    border-color: var(--purple);
+    color: var(--purple);
+    &:hover {
+      color: var(--white);
+      background-color: var(--purple);
+    }
+  }
 }
 
 .form-control {
@@ -32,13 +48,7 @@
   .form-control {
     width: calc( 50% - ( var(--gap) / 2 ) );
   }
-  .form-recall__btn {
+  .btn {
     width: 100%;
-    border-color: var(--yellow);
-    color: var(--white);
-    &:hover {
-      color: var(--black);
-      background-color: var(--yellow);
-    }
   }
 }

@@ -44,7 +44,7 @@
               <div class="form-recall">
                 <input type="text" class="form-control" placeholder="Ваше Имя">
                 <input type="text" class="form-control" placeholder="Ваш телефон">
-                <button class="btn form-recall__btn">Отправить заявку</button>
+                <button class="btn btn-custom1">Отправить заявку</button>
               </div>
             </form>
           </div>
@@ -84,7 +84,7 @@
           <div class="header-form form-recall">
             <input type="text" class="form-control" placeholder="Ваше Имя">
             <input type="text" class="form-control" placeholder="Ваш телефон">
-            <button class="btn form-recall__btn">Отправить заявку</button>
+            <button class="btn btn-custom1">Отправить заявку</button>
           </div>
         </form>
       </div><!-- #header-content -->
@@ -187,7 +187,7 @@
             <div class="form-recall">
               <input type="text" class="form-control" placeholder="Ваше Имя">
               <input type="text" class="form-control" placeholder="Ваш телефон">
-              <button class="btn form-recall__btn">Отправить заявку</button>
+              <button class="btn btn-custom1">Отправить заявку</button>
             </div>
           </form>
         </div>
@@ -273,7 +273,6 @@
   <div class="faq-section">
     <div class="container">
       <h3 class="title">Часто задаваемые вопросы</h3>
-
       <div class="accordion faq-section__accordion">
         <div class="accordion__item">
           <h4 class="accordion__title">Как посчитать стоимость доставки груза?</h4>
@@ -311,9 +310,41 @@
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </div><!-- #faq -->
+
+  <div class="cargo-section">
+    <div class="container">
+      <h3 class="title">Отслеживание груза</h3>
+      <div class="cargo-section__row">
+        <div class="cargo-section__form">
+          <p><label for="number">Введите серийный номер</label></p>
+          <div class="cargo-form">
+            <div class="cargo-form__number">
+              <input class="cargo-form__input" id="number" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+              <input class="cargo-form__input" type="num" maxlength="1">
+            </div>
+            <button class="btn btn-custom2">Найти</button>
+          </div>
+        </div>
+        <div class="cargo-section__result">
+          <div class="cargo-result">
+            <p>Местоположение вашего груза</p>
+            <ul>
+              <li><span>Страна:</span> Казахстан</li>
+              <li><span>Город:</span> Туркистан</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #cargo -->
 
 
   <script src="libs/jquery/jquery-3.7.0.min.js" defer></script>
