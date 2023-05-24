@@ -4,7 +4,6 @@ $(document).on("click", ".js-lang__btn", function() {
   $(this).toggleClass('active');
   $('.js-lang__dropdown').toggleClass('active');
 });
-
 $(document).on("click", ".js-phone__num, .js-phone__modal-close", function() {
   // $(this).toggleClass('active');
   $('.js-phone__modal').toggleClass('active');
@@ -22,7 +21,7 @@ $(".header-title-slider").slick({
   pauseOnHover:false
 });
 
-
+// accordion
 $('.accordion__content').hide();
 $('.accordion__item').click(function () {
   if ($(this).hasClass("active")) {
@@ -35,12 +34,8 @@ $('.accordion__item').click(function () {
   return false;
 });
 
-// $(".cargo-form__input").keyup(function() {
-//   if (this.value.length == this.maxLength) {
-//     $(this).nextAll('.cargo-form__input:enabled:first').focus();
-//   }
-// });
 
+// cargo-form__input
 document.addEventListener("DOMContentLoaded", () => {
 
   const inputElements = [...document.querySelectorAll('.cargo-form__input')];
@@ -73,3 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 });
+
+

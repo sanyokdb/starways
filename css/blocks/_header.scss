@@ -1,7 +1,13 @@
+.header {
+  position: relative;
+  .container {
+    position: relative;
+  }
+}
 .header--home {
-  background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
-  background-size: 800% 800%;
-  animation: header-bg 20s ease infinite;
+  // background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
+  // background-size: 800% 800%;
+  // animation: header-bg 20s ease infinite;
   min-height: 680px;
   padding-bottom: 65px;
 
@@ -239,6 +245,9 @@
 // header-content
 .header-content {
   color: var(--white);
+  .form-recall {
+    max-width: 400px;
+  }
 }
 .header-title-wrapp {
   margin-bottom: 50px;
