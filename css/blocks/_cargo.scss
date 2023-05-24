@@ -13,9 +13,7 @@
   }
   &__result {
     width: calc(45% - 30px);
-    // display: none;
   }
-
 
 }
 
@@ -40,6 +38,15 @@
 }
 
 .cargo-result {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  transition: all .2s ease;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
   li {
     font-weight: 700;
     span {
