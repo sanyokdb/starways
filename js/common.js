@@ -10,28 +10,6 @@ $(document).on("click", ".js-phone__num, .js-phone__modal-close", function() {
   $('.js-phone__modal').toggleClass('active');
 });
 
-
-// mask
-$.fn.setCursorPosition = function(pos) {
-  if ($(this).get(0).setSelectionRange) {
-    $(this).get(0).setSelectionRange(pos, pos);
-  } else if ($(this).get(0).createTextRange) {
-    var range = $(this).get(0).createTextRange();
-    range.collapse(true);
-    range.moveEnd('character', pos);
-    range.moveStart('character', pos);
-    range.select();
-  }
-};
-$.mask.definitions['9'] = '';
-$.mask.definitions['n'] = '[0-9]';
-$(function(){
-  $("#phone").click(function(){$(this).setCursorPosition(5);}).mask("+998 nn nnn-nn-nn");
-  $("#phone2").click(function(){$(this).setCursorPosition(5);}).mask("+998 nn nnn-nn-nn");
-  $("#phone3").click(function(){$(this).setCursorPosition(5);}).mask("+998 nn nnn-nn-nn");
-});
-
-
 $(".header-title-slider").slick({
   slidesToShow: 1,
   speed: 300,
@@ -42,4 +20,17 @@ $(".header-title-slider").slick({
   fade: true,
   adaptiveHeight: true,
   pauseOnHover:false
+});
+
+
+$('.accordion__content').hide();
+$('.accordion__item').click(function () {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active").find(".accordion__content").slideUp();
+  } else {
+    $(".accordion__item.active .accordion__content").slideUp();
+    $(".accordion__item.active").removeClass("active");
+    $(this).addClass("active").find(".accordion__content").slideDown();
+  }
+  return false;
 });

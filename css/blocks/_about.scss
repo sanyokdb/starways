@@ -10,9 +10,7 @@
   }
   &__text {
     width: calc(50% - var(--gap) / 2 );
-    p:not(:last-child) {
-      margin-bottom: 20px;
-    }
+    align-self: center;
   }
   &__image {
     width: calc(50% - var(--gap) / 2 );

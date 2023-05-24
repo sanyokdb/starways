@@ -50,14 +50,27 @@
 
 /* Extra large (xl) */
 @media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
+	.h1, h1 {
+    font-size: 2.5rem;
+  }
+  .h2, h2 {
+    font-size: 2rem;
+  }
+  .h3, h3 {
+    font-size: 1.75rem;
+  }
+  .h4, h4 {
+    font-size: 1.5rem;
+  }
+  .h5, h5 {
+    font-size: 1.25rem;
+  }
+  .h6, h6 {
+    font-size: 1rem;
+  }
 }
 
 /* Extra extra large (xxl) */
 @media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
+
 }

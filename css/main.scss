@@ -44,13 +44,6 @@ a {
   transition: all .2s ease;
 }
 
-.container {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -60,8 +53,31 @@ a {
 .h1, h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
+.h2, h2 {
+  font-size: calc(1.325rem + .9vw);
+}
 .h3, h3 {
   font-size: calc(1.3rem + .6vw);
+}
+.h4, h4 {
+  font-size: calc(1.275rem + .3vw);
+}
+.h5, h5 {
+  font-size: 1.25rem;
+}
+.h6, h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .title {
@@ -70,9 +86,12 @@ a {
   margin-bottom: 42px;
 }
 
+
+
 /* USER STYLES */
 
 @import "blocks/form";
+@import "blocks/accordion";
 
 @import "blocks/header";
 @import "blocks/advantage";
@@ -83,6 +102,3 @@ a {
 @import "blocks/about";
 @import "blocks/experience";
 @import "blocks/faq";
-
-
-
