@@ -3,46 +3,73 @@
   .container {
     position: relative;
   }
-}
-.header--home {
-  // background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
-  // background-size: 800% 800%;
-  // animation: header-bg 20s ease infinite;
-  min-height: 680px;
-  padding-bottom: 65px;
 
-  .header-top {
-    
-    .logo {
-      &__light { display: block; }
-      &__dark { display: none; }
-    }
-    .phone {
-      &__num {
-        color: var(--white);
-        svg {
-          path {
-            fill: var(--white);
+  &--dark {
+    .header-top {
+      
+      .logo {
+        &__light { display: block; }
+        &__dark { display: none; }
+      }
+      .phone {
+        &__num {
+          color: var(--white);
+          svg {
+            path {
+              fill: var(--white);
+            }
           }
         }
       }
     }
-  }
-
-  .menu {
-    &__link {
-      color: var(--white);
+    .menu {
+      &__link {
+        color: var(--white);
+      }
+    }
+    .lang {
+      &__btn {
+        color: var(--white);
+        svg path { fill: var(--white); }
+      }
     }
   }
 
-  .lang {
-    &__btn {
-      color: var(--white);
-      svg path { fill: var(--white); }
+  &--home {
+    // background: linear-gradient(90deg, #282937, #5a3fea, #532dbb, #9747ff);
+    // background-size: 800% 800%;
+    // animation: header-bg 20s ease infinite;
+    min-height: 680px;
+    padding-bottom: 65px;
+  }
+
+  &--fixed {
+    .header-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      margin-bottom: 0;
+      transition: all .4s ease;
+      &--scrolled {
+        background-color: var(--white);
+        box-shadow: 0 0 20px 0 rgba(33,37,41,.3);
+        .header-top__inner {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      
     }
+
+    .header-content {
+      padding-top: 181px;
+    }
+
   }
 
 }
+
 @keyframes header-bg {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -50,13 +77,16 @@
 }
 
 .header-top {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  position: relative;
   margin-bottom: 65px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   .logo {
     flex-shrink: 0;
@@ -98,20 +128,21 @@
     &__modal {
       position: absolute;
       z-index: 1;
-      top: -10px;
-      left: -20px;
+      top: -20px;
+      left: -30px;
       background-color: var(--black);
-      min-width: 440px;
-      padding: 50px 20px 20px;
+      min-width: 460px;
+      padding: 60px 30px 30px;
       visibility: hidden;
       opacity: 0;
       transition: all .2s ease;
       color: var(--white);
+      box-shadow: 0 0 20px 0 rgba(33,37,41,.3);
 
       &-num {
         position: absolute;
-        top: 10px;
-        left: 20px;
+        top: 20px;
+        left: 30px;
         color: var(--white);
         display: flex;
         align-items: center;

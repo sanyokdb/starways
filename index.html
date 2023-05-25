@@ -26,47 +26,52 @@
 
 <body>
 
-  <header class="header header--home">
+  <header class="header header--fixed header--home header--dark">
     <div class="video-container">
       <video autoplay loop muted><source src="images/video/header-video.mp4" type="video/mp4"></video>
     </div>
+
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <a class="logo" href="/">
+            <img class="logo__light" src="images/logo-light.svg" width="220" height="36" alt="Starways Logistics">
+            <img class="logo__dark" src="images/logo-dark.svg" width="220" height="36" alt="Starways Logistics">
+          </a>
+          <div class="phone">
+            <a class="phone__num js-phone__num" href="#!"><svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6583 22.9999C18.9111 22.9999 16.2329 22.393 13.6237 21.1791C11.0144 19.9652 8.7038 18.3467 6.69172 16.3235C4.67965 14.3004 3.06113 11.9842 1.83617 9.37502C0.611204 6.76581 -0.000850964 4.08802 8.87963e-07 1.34166V0.670831C8.87963e-07 0.436573 0.0212971 0.212962 0.0638897 0H7.53889L8.72083 6.42081L5.07917 10.0944C5.97361 11.6277 7.0972 13.0652 8.44994 14.4069C9.80269 15.7485 11.2879 16.9092 12.9056 17.8888L16.6111 14.1833L23 15.4611V22.936C22.787 22.9573 22.5634 22.9735 22.3292 22.9846C22.0949 22.9957 21.8713 23.0008 21.6583 22.9999Z" fill="currentColor"/></svg>+99891 017 0909</a>
+            <div class="phone__modal js-phone__modal">
+              <span class="phone__modal-close js-phone__modal-close"></span>
+              <a class="phone__modal-num" href="tel:+998910170909"><svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6583 22.9999C18.9111 22.9999 16.2329 22.393 13.6237 21.1791C11.0144 19.9652 8.7038 18.3467 6.69172 16.3235C4.67965 14.3004 3.06113 11.9842 1.83617 9.37502C0.611204 6.76581 -0.000850964 4.08802 8.87963e-07 1.34166V0.670831C8.87963e-07 0.436573 0.0212971 0.212962 0.0638897 0H7.53889L8.72083 6.42081L5.07917 10.0944C5.97361 11.6277 7.0972 13.0652 8.44994 14.4069C9.80269 15.7485 11.2879 16.9092 12.9056 17.8888L16.6111 14.1833L23 15.4611V22.936C22.787 22.9573 22.5634 22.9735 22.3292 22.9846C22.0949 22.9957 21.8713 23.0008 21.6583 22.9999Z" fill="currentColor"/></svg>+99891 017 0909</a>
+              <p>Закажите обратный звонок для бесплатной консультации</p>
+              <form action="#">
+                <div class="form-recall">
+                  <input type="text" class="form-control" placeholder="Ваше Имя">
+                  <input type="text" class="form-control" placeholder="Ваш телефон">
+                  <button class="btn btn-custom1">Отправить заявку</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">Наши услуги</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Отслеживание груза</a></li>
+            </ul>
+          </nav>
+          <div class="lang">
+            <a class="lang__btn js-lang__btn" href="#!">RU <svg width="9" height="9" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.18382e-07 3.09512L6.83091e-07 6.19023L5.78363e-07 8.58612L5.47799e-07 9.28535L6 12L12 9.28535L12 8.83548L12 6.19023L12 3.09512L12 1.54756L12 0L6 2.76864L9.53674e-07 -5.24537e-07L9.30414e-07 0.532133L8.18382e-07 3.09512Z" fill="currentColor"/></svg></a>
+            <div class="lang__dropdown js-lang__dropdown">
+              <a href="#">EN</a>
+              <a href="#">UZ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- #header-top -->
+
     <div class="container">
-      
-      <div class="header-top">
-        <a class="logo" href="#">
-          <img class="logo__light" src="images/logo-light.svg" width="220" height="36" alt="Starways Logistics">
-          <img class="logo__dark" src="images/logo-dark.svg" width="220" height="36" alt="Starways Logistics">
-        </a>
-        <div class="phone">
-          <a class="phone__num js-phone__num" href="#"><svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6583 22.9999C18.9111 22.9999 16.2329 22.393 13.6237 21.1791C11.0144 19.9652 8.7038 18.3467 6.69172 16.3235C4.67965 14.3004 3.06113 11.9842 1.83617 9.37502C0.611204 6.76581 -0.000850964 4.08802 8.87963e-07 1.34166V0.670831C8.87963e-07 0.436573 0.0212971 0.212962 0.0638897 0H7.53889L8.72083 6.42081L5.07917 10.0944C5.97361 11.6277 7.0972 13.0652 8.44994 14.4069C9.80269 15.7485 11.2879 16.9092 12.9056 17.8888L16.6111 14.1833L23 15.4611V22.936C22.787 22.9573 22.5634 22.9735 22.3292 22.9846C22.0949 22.9957 21.8713 23.0008 21.6583 22.9999Z" fill="currentColor"/></svg>+99891 017 0909</a>
-          <div class="phone__modal js-phone__modal">
-            <span class="phone__modal-close js-phone__modal-close"></span>
-            <a class="phone__modal-num" href="tel:+998910170909"><svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6583 22.9999C18.9111 22.9999 16.2329 22.393 13.6237 21.1791C11.0144 19.9652 8.7038 18.3467 6.69172 16.3235C4.67965 14.3004 3.06113 11.9842 1.83617 9.37502C0.611204 6.76581 -0.000850964 4.08802 8.87963e-07 1.34166V0.670831C8.87963e-07 0.436573 0.0212971 0.212962 0.0638897 0H7.53889L8.72083 6.42081L5.07917 10.0944C5.97361 11.6277 7.0972 13.0652 8.44994 14.4069C9.80269 15.7485 11.2879 16.9092 12.9056 17.8888L16.6111 14.1833L23 15.4611V22.936C22.787 22.9573 22.5634 22.9735 22.3292 22.9846C22.0949 22.9957 21.8713 23.0008 21.6583 22.9999Z" fill="currentColor"/></svg>+99891 017 0909</a>
-            <p>Закажите обратный звонок для бесплатной консультации</p>
-            <form action="#">
-              <div class="form-recall">
-                <input type="text" class="form-control" placeholder="Ваше Имя">
-                <input type="text" class="form-control" placeholder="Ваш телефон">
-                <button class="btn btn-custom1">Отправить заявку</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Наши услуги</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Отслеживание груза</a></li>
-          </ul>
-        </nav>
-        <div class="lang">
-          <a class="lang__btn js-lang__btn" href="#">RU <svg width="9" height="9" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.18382e-07 3.09512L6.83091e-07 6.19023L5.78363e-07 8.58612L5.47799e-07 9.28535L6 12L12 9.28535L12 8.83548L12 6.19023L12 3.09512L12 1.54756L12 0L6 2.76864L9.53674e-07 -5.24537e-07L9.30414e-07 0.532133L8.18382e-07 3.09512Z" fill="currentColor"/></svg></a>
-          <div class="lang__dropdown js-lang__dropdown">
-            <a href="#">EN</a>
-            <a href="#">UZ</a>
-          </div>
-        </div>
-      </div><!-- #header-top -->
       
       <div class="header-content">
         <div class="header-title-wrapp">
@@ -417,8 +422,7 @@
       </div>
 
     </div>
-  </footer>
-
+  </footer><!-- #footer -->
 
   <script src="libs/jquery/jquery-3.7.0.min.js" defer></script>
   <script src="libs/slick-carousel/slick.min.js" defer></script>

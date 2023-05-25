@@ -1,4 +1,13 @@
 // $('body').hide()
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 0) {
+    $(".header--fixed .header-top").addClass("header-top--scrolled");
+    $(".header--fixed").removeClass("header--dark");
+  } else {
+    $(".header--fixed .header-top").removeClass("header-top--scrolled");
+    $(".header--fixed").addClass("header--dark");
+  }
+});
 
 $(document).on("click", ".js-lang__btn", function() {
   $(this).toggleClass('active');
