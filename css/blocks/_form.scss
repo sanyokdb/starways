@@ -42,7 +42,7 @@
 .form-recall {
   &__inner {
     --gap: 30px;
-    // max-width: 400px;
+    max-width: 400px;
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
