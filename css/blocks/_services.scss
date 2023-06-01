@@ -44,6 +44,20 @@
     margin-top: 10px;
     margin-bottom: auto;
     font-size: 20px;
+    li {
+      position: relative;
+      padding-left: 26px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 14px;
+        width: 5px;
+        height: 5px;
+        background-color: var(--white);
+        border-radius: 50%;
+      }
+    }
   }
   &__icon {
     margin-top: 30px;
@@ -60,4 +74,34 @@
     }
   }
 
+}
+
+
+@media (max-width: 991.98px) {
+  .services-row {
+    --gap: 30px;
+    --elements: 2;
+    >div:nth-child(1) {
+      width: 100%;
+    }
+    .services-item {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .services-row {
+    --gap: 30px;
+    --elements: 1;
+    >div:nth-child(2) {
+      width: 100%;
+    }
+    .services-item {
+      min-height: auto;
+    }
+  }
 }
