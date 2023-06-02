@@ -85,6 +85,13 @@ p {
   font-size: 35px;
   font-family: var(--userfont2);
   margin-bottom: 42px;
+  @media (max-width: 767.98px) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 26px;
+  }
 }
 
 .video-container {

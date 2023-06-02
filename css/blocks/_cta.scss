@@ -62,6 +62,7 @@
     &__row {
       flex-direction: column;
       align-items: flex-start;
+      gap: 20px;
       &::before {
         left: 0;
         transform: translateX(-15px);
@@ -71,9 +72,17 @@
     &__title {
       width: auto;
       padding-right: 0;
+      font-size: 24px;
     }
     &__form {
       width: auto;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .cta-section {
+    &__title {
+      font-size: 20px;
     }
   }
 }
