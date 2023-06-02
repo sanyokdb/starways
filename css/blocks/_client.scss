@@ -12,6 +12,7 @@
   }
   &__item {
     // flex-grow: 1;
+    min-width: 90px;
     text-align: center;
     width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
     img {
@@ -19,6 +20,24 @@
       &:hover {
         filter: grayscale(0);
       }
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .client-section {
+    &__row {
+      --gap: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .client-section {
+    &__row {
+      --gap: 5px;
     }
   }
 }
