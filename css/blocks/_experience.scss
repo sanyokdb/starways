@@ -57,3 +57,37 @@
     }
   }
 }
+
+
+@media (max-width: 991.98px) {
+  .experience-section {
+    &__row {
+      --gap: 2px;
+      --elements: 4;
+      >a:nth-child(n+9) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .experience-section {
+    &__row {
+      --elements: 3;
+      >a:nth-child(n+7) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .experience-section {
+    &__row {
+      --elements: 2;
+      >a:nth-child(n+5) {
+        display: none;
+      }
+    }
+  }
+}
