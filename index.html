@@ -26,12 +26,12 @@
 
 <body>
 
-  <header class="header header--fixed header--home header--dark d-none">
+  <header class="header header--fixed header--home header--dark">
     <div class="video-container">
       <video autoplay loop muted><source src="images/video/header-video.mp4" type="video/mp4"></video>
     </div>
 
-    <div class="header-top">
+    <div class="header-top d-none">
       <div class="container">
         <div class="header-top__inner">
           <a class="logo" href="/">
@@ -72,7 +72,6 @@
     </div><!-- #header-top -->
 
     <div class="container">
-      
       <div class="header-content">
         <div class="header-title-wrapp">
           <div class="header-title">Доставляем со всего мира</div>
@@ -88,15 +87,14 @@
           <div class="header-title">в Узбекистан</div>
         </div>
         <p class="header-text">Закажите обратный звонок для бесплатной консультации</p>
-        <form action="#">
-          <div class="form-recall">
+        <form class="form-recall" action="#">
+          <div class="form-recall__inner">
             <input type="text" class="form-control" placeholder="Ваше Имя">
             <input type="text" class="form-control" placeholder="Ваш телефон">
             <button class="btn btn-custom1">Отправить заявку</button>
           </div>
         </form>
       </div><!-- #header-content -->
-
     </div>
   </header><!-- #header -->
 
