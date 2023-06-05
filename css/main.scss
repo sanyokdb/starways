@@ -94,6 +94,7 @@ p {
   }
 }
 
+// Video full
 .video-container {
   position: absolute;
   top: 0;
@@ -131,3 +132,5 @@ p {
 @import "blocks/faq";
 @import "blocks/cargo";
 @import "blocks/footer";
+@import "blocks/scrollup";
+@import "blocks/spacing";

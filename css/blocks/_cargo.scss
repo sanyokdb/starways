@@ -1,5 +1,4 @@
 .cargo-section {
-  background-color: var(--gray);
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -10,6 +9,10 @@
     >div {
       flex: 1 0 auto;
     }
+  }
+
+  &--home {
+    background-color: var(--gray);
   }
 
 }
@@ -29,6 +32,7 @@
     width: 32px;
     height: 52px;
     text-align: center;
+    border: 1px solid var(--gray);
   }
   .btn {
     flex-grow: 1;

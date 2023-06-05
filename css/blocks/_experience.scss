@@ -64,7 +64,9 @@
     &__row {
       --gap: 2px;
       --elements: 4;
-      >a:nth-child(n+9) {
+    }
+    &--home {
+      .experience-section__row >a:nth-child(n+9) {
         display: none;
       }
     }
@@ -74,7 +76,9 @@
   .experience-section {
     &__row {
       --elements: 3;
-      >a:nth-child(n+7) {
+    }
+    &--home {
+      .experience-section__row >a:nth-child(n+7) {
         display: none;
       }
     }
@@ -85,7 +89,9 @@
   .experience-section {
     &__row {
       --elements: 2;
-      >a:nth-child(n+5) {
+    }
+    &--home {
+      .experience-section__row >a:nth-child(n+5) {
         display: none;
       }
     }

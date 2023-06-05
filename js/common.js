@@ -5,7 +5,7 @@ $(window).scroll(function () {
     $(".header--fixed").removeClass("header--dark");
   } else {
     $(".header--fixed .header-top").removeClass("header-top--scrolled");
-    $(".header--fixed").addClass("header--dark");
+    $(".header--fixed.header--home").addClass("header--dark");
   }
 });
 
@@ -16,6 +16,11 @@ $(document).on("click", ".js-lang__btn", function() {
 $(document).on("click", ".js-phone__num, .js-phone__modal-close", function() {
   // $(this).toggleClass('active');
   $('.js-phone__modal').toggleClass('active');
+});
+
+$(document).on("click", ".menu__btn", function() {
+  $(this).toggleClass('active');
+  $('.menu__list').toggleClass('active');
 });
 
 $(".header-title-slider").slick({
@@ -43,12 +48,24 @@ $('.accordion__item').click(function () {
   return false;
 });
 
+$(window).scroll(function(){
+  if($(window).scrollTop() > 100) {
+    $('.scrollup').addClass("active");
+  } else {
+    $('.scrollup').removeClass("active");
+  }
+});
+
+$('.scrollup').click(function(){
+  $('html, body').animate({scrollTop: 0}, 600);
+  return false;
+});
+
+
 
 // cargo-form__input
 document.addEventListener("DOMContentLoaded", () => {
-
   const inputElements = [...document.querySelectorAll('.cargo-form__input')];
-
   inputElements.forEach((ele,index)=>{
     ele.addEventListener('keydown',(e)=>{
       // if the keycode is backspace & the current field is empty
@@ -74,8 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  
-
 });
 
 

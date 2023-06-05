@@ -1,10 +1,15 @@
 .services-section {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: var(--black);
-  color: var(--white);
-  .title {
+  &--home {
+    background-color: var(--black);
     color: var(--white);
+    .title {
+      color: var(--white);
+    }
+    .services-item__list li::before {
+      background-color: var(--white);
+    }
   }
 }
 
@@ -54,7 +59,7 @@
         top: 14px;
         width: 5px;
         height: 5px;
-        background-color: var(--white);
+        background-color: var(--black);
         border-radius: 50%;
       }
     }
@@ -68,9 +73,12 @@
   &:hover {
     background-color: var(--orchid);
     color: var(--white);
-    transform: scale(1.1);
+    transform: scale(1.05);
     .services-item__icon {
       color: var(--white);
+    }
+    .services-item__list li::before {
+      background-color: var(--white);
     }
   }
 
