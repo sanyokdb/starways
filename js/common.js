@@ -1,4 +1,9 @@
 // $('body').hide()
+
+$('.preloader').delay(400).fadeOut('slow', function () {
+  $(this).attr('style', 'display: none !important');
+});
+
 $(window).scroll(function () {
   if ($(this).scrollTop() > 0) {
     $(".header--fixed .header-top").addClass("header-top--scrolled");
