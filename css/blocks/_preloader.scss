@@ -23,9 +23,7 @@
       #fff
     ),
     conic-gradient(from var(--border-angle), transparent 20%, var(--yellow), var(--purple));
-  background-size: calc(100% - (var(--border-size) * 2))
-      calc(100% - (var(--border-size) * 2)),
-    cover;
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
   background-position: center center;
   background-repeat: no-repeat;
 
