@@ -388,7 +388,7 @@ p {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 0 0 15px 0;
   cursor: pointer;
 }
 .accordion__item.active .accordion__title {
@@ -642,6 +642,7 @@ p {
   display: flex;
   align-items: center;
   padding: 5px 10px;
+  transition: all 0.2s ease;
 }
 .lang__btn svg {
   margin-left: 6px;
@@ -1354,11 +1355,11 @@ p {
 }
 .cargo-section__row {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
-.cargo-section__row > div {
-  flex: 1 0 auto;
+.cargo-section__form {
+  max-width: 660px;
+  width: 100%;
 }
 .cargo-section--home {
   background-color: var(--gray);
@@ -1407,12 +1408,17 @@ p {
   margin-bottom: 5px;
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 483.98px) {
   .cargo-form {
     flex-direction: column;
   }
   .cargo-form__input {
     flex: 1 0 auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .cargo-section__row {
+    flex-direction: column;
   }
 }
 .footer {
