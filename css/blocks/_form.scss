@@ -5,6 +5,7 @@
   text-transform: lowercase;
   transition: all .2s ease;
   display: inline-block;
+  cursor: pointer;
   &-custom1 {
     border-color: var(--yellow);
     color: var(--white);
@@ -34,7 +35,7 @@
   background-color: transparent;
   background-clip: padding-box;
   border: 0;
-  border-bottom: 2px solid var(--white);
+  border-bottom: 1px solid var(--white);
   appearance: none;
   border-radius: 0;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;

@@ -1,5 +1,5 @@
 .experience-section {
-  padding-top: 50px;
+  // padding-top: 50px;
   padding-bottom: 50px;
 
   &__row {
@@ -14,6 +14,11 @@
       overflow: hidden;
       background-color: var(--black);
       display: inline-block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       img,
       &::before,
       &::after {

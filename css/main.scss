@@ -13,7 +13,7 @@
   
   --accent: var(--purple);
   --text: var(--black);
-  --regular-text: 16px;
+  --regular-text: 18px;
   --lineheight: 1.46;
   --userfont1: 'Manrope', sans-serif;
   --userfont2: 'Unbounded', cursive;
@@ -25,7 +25,8 @@
 
 /* GENERAL CSS SETTINGS */
 
-::placeholder { color: #aaaaaa; }
+// ::placeholder { color: #aaaaaa; }
+::placeholder { color: #ffffff; }
 ::selection { background-color: var(--accent); color: var(--color-white); }
 input, textarea { outline: none; }
 input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
@@ -39,6 +40,9 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
+  @media (max-width: 1199.98px) {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -75,7 +79,7 @@ p {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1399.98px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -135,3 +139,4 @@ p {
 @import "blocks/footer";
 @import "blocks/scrollup";
 @import "blocks/spacing";
+@import "blocks/sweetalert2";

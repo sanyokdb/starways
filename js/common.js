@@ -1,5 +1,4 @@
 // $('body').hide()
-
 $('.preloader').delay(400).fadeOut('slow', function () {
   $(this).attr('style', 'display: none !important');
 });
@@ -95,7 +94,17 @@ document.addEventListener("DOMContentLoaded", () => {
         inputElements[index+1].dispatchEvent(new Event('input'));
       }
     });
+    ele.addEventListener('paste',(e)=>{
+      if (e.target.type === "text") {
+        var data = e.clipboardData.getData('Text');
+        // split clipboard text into single characters
+        data = data.split('');
+        // find all other text inputs
+        [].forEach.call(document.querySelectorAll(".cargo-form__input"), (node, index) => {
+           // And set input value to the relative character
+           node.value = data[index];
+         });
+       }
+    });
   });
 });
-
-
