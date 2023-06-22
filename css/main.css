@@ -308,7 +308,10 @@ p {
   height: 54px;
   text-transform: lowercase;
   transition: all 0.2s ease;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
 }
 .btn:not(.btn-load) > span:nth-child(2) {
